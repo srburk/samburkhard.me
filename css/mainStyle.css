@@ -1,3 +1,59 @@
+@font-face {
+  font-family: "NunitoSans_Black";
+  src: url("../fonts/NunitoSans-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NunitoSans_BlackItalic";
+  src: url("../fonts/NunitoSans-BlackItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NunitoSans_Bold";
+  src: url("../fonts/NunitoSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NunitoSans_BoldItalic";
+  src: url("../fonts/NunitoSans-BoldItalicttf") format("truetype");
+}
+@font-face {
+  font-family: "NunitoSans_ExtraBold";
+  src: url("../fonts/NunitoSans-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NunitoSans_ExtraBoldItalic";
+  src: url("../fonts/NunitoSans-ExtraBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NunitoSans_ExtraLight";
+  src: url("../fonts/NunitoSans-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NunitoSans_ExtraLightItalic";
+  src: url("../fonts/NunitoSans-ExtraLightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NunitoSans_Italic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NunitoSans_Light";
+  src: url("../fonts/NunitoSans-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NunitoSans_LightItalic";
+  src: url("../fonts/NunitoSans-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NunitoSans_Regular";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NunitoSans_SemiBold";
+  src: url("../fonts/NunitoSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NunitoSans_SemiBoldItalic";
+  src: url("../fonts/NunitoSans-SemiBoldItalic.ttf") format("truetype");
+}
 /* Tablet Landscape */
 @media screen and (max-width: 1060px) {
   #primary {
@@ -30,6 +86,15 @@ img {
 html {
   font-size: 100%;
   background-color: white;
+}
+
+.nav-link {
+  color: black;
+}
+
+.navbar-brand {
+  font-family: NunitoSans_Bold;
+  color: black;
 }
 
 .hero-greeting {
@@ -71,7 +136,7 @@ html {
   transform: translateZ(-1px) scale(2);
   background-size: 100%;
   z-index: -1;
-  background-color: white;
+  background-image: url("../assets/img.jpeg");
 }
 
 /*# sourceMappingURL=mainStyle.css.map */
