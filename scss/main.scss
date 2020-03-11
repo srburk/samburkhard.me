@@ -28,6 +28,10 @@ svg {
   color: black;
 }
 
+.nav-item {
+  font-family:  NunitoSans_Regular;
+}
+
 .navbar-brand {
   font-family: NunitoSans_Bold;
   color: black;
@@ -38,21 +42,11 @@ svg {
   width: 60%;
 }
 
-.my-wrapper {
+#app {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  perspective: 1px;
-}
-
-.object-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: none;
-  justify-content: center;
+  perspective: 1px
 }
 
 .section {
@@ -62,32 +56,62 @@ svg {
   justify-content: center;
 }
 
-.parallax::after {
+.parallax {
   content: " ";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  transform: translateZ(-.001px) scale(2);
+  transform: translateZ(-1px) scale(2);
   background-size: 100%;
   z-index: -1;
   background-color: white;
 }
 
-.sticks-animation {
+// .sticks-animation {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: auto;
+//   height: 75%;
+// }
+
+.forefront-parallax {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(1px) scale(2);
+  background-size: 100%;
+  z-index: -1;
+  background-color: white;
+}
+
+// .sticks-animation div {
+//   /*position: absolute;*/
+//   // width: 64px;
+//   // height: 128px;
+//   width: 10%;
+//   height: 15%;
+//   border: 2px solid #000000;
+//   background-color: #FFFFFF;
+// }
+
+.landing-animation {
+
   display: flex;
   justify-content: center;
   align-items: center;
   width: auto;
-  height: 75%;
-}
+  height: 95%;
 
-.sticks-animation div {
-  /*position: absolute;*/
-  width: 64px;
-  height: 128px;
-  border: 2px solid #000000;
-  // background-color: #F6F4F2;
-  background-color: #FFF;
+  div {
+    width: 5%;
+    height: 15%;
+    border: 1px solid #000000;
+    background-color: white;
+  }
 }

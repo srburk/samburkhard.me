@@ -16,45 +16,36 @@
     <title>sam burkhard</title>
   </head>
   <body>
-    <div id="app" class="container-fluid my-wrapper">
+    <div id="app" class="container-fluid">
       <nav class="navbar navbar-toggleable-md sticky-top justify-content-between">
 
         <a class="navbar-brand mr-auto" href="#">sam burkhard.</a>
-        <ul class="navbar-nav ml-auto">
+        <ul class="nav justify-content-end">
           <li class="nav-item">
             <a class="nav-link" href="#">me</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">social</a>
+          </li>
         </ul>
       </nav>
-      <div class="sticks-animation"></div>
-      <div class="wrapper">
 
+      <!-- <div class="sticks-animation"></div> -->
+      <div class="landing-animation section"></div>
+
+      <div class="content">
+        <h2>I'm Content!</h2>
       </div>
-    <div class="section parallax">
-
-      <!-- <img class="hero-greeting" src="assets/WASOC.svg" alt="Text that reads a splash of color"> -->
-    </div>
-    <div class="content">
-      <h2>I'm Content!</h2>
     </div>
 
       <!-- JS Files -->
-
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <script src="./js/anime.min.js"></script>
-      <script src="./js/index.js"></script>
-      <script type="text/javascript">
-      anime({
-        targets: $(".path"),
-        loop: true,
-        direction: 'alternate',
-        strokeDashoffset: [anime.setDashoffset, 0],
-        easing: 'easeInOutSine',
-        duration: 700,
-        delay: (el, i) => { return i * 500 }
-      });
-      </script>
+      <script src="./js/landing-animation.js"></script>
     </div>
   </body>
 </html>
