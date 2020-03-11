@@ -1,5 +1,5 @@
 const fragment = document.createDocumentFragment();
-const numberOfElements = 60;
+const numberOfElements = 64;
 
 for (let i = 0; i < numberOfElements; i++) {
   $('<div></div>').appendTo(fragment);
@@ -24,6 +24,14 @@ const landingAnimation = anime.timeline({
   rotate: anime.stagger([-110, 110]),
   scale: anime.stagger([1, 3], {from: 'center'}),
   delay: anime.stagger(10, {from: 0}),
+})
+
+.add({
+  translateX: () => anime.random(-90, 100),
+  translateY: () => anime.random(-150, 150),
+  scale: anime.stagger([1.5, .5], {from: 'center'}),
+  rotate: anime.stagger([7, -7], {from: 'last'}),
+  delay: anime.stagger(60, {from: 'center', grid: [8, 8]}),
 })
 
 const staggersAnimation = anime.timeline({
@@ -61,13 +69,7 @@ const staggersAnimation = anime.timeline({
 //   rotate: 0,
 //   delay: anime.stagger(1, {from: 'last'})
 // })
-.add({
-  translateX: () => anime.random(-100, 100),
-  translateY: () => anime.random(-100, 100),
-  scale: anime.stagger([1.5, .5], {from: 'center'}),
-  rotate: anime.stagger([10, -10], {from: 'last'}),
-  delay: anime.stagger(50, {from: 'center', grid: [9, 9]}),
-})
+
 // .add({
 //   translateX: () => anime.random(-100, 100),
 //   translateY: () => anime.random(-100, 100),
