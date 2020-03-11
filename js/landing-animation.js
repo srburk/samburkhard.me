@@ -9,7 +9,7 @@ if ($(window).width() < 450) {
 }
 
 for (let i = 0; i < numberOfElements; i++) {
-  $('<div></div>').appendTo(box);
+  $('<div class="landing-animation-el"></div>').appendTo(box);
 }
 
 let animation = $('.landing-animation');
@@ -17,7 +17,7 @@ let animation = $('.landing-animation');
 $(box).appendTo(animation);
 
 const landingAnimation = anime.timeline({
-  targets: '.landing-animation div',
+  targets: '.landing-animation .landing-animation-el',
   easing: 'easeInOutSine',
   delay: anime.stagger(20),
   loop: false,
@@ -29,13 +29,13 @@ const landingAnimation = anime.timeline({
   translateY: anime.stagger([-($(window).height() / 5), ($(window).height() / 5)]),
   translateX: anime.stagger([-5, 100]),
   rotate: anime.stagger([-45, 194]),
-  scale: anime.stagger([1, 3.5], {from: 'center'}),
+  scale: anime.stagger([1, 2], {from: 'center'}),
   delay: anime.stagger(10, {from: 0}),
 })
 
 const scrollingAnimation = anime.timeline({
-  targets: '.landing-animation div',
-  easing: 'easeInOutSine',
+  targets: '.landing-animation .landing-animation-el',
+  easing: 'easeInSine',
   delay: anime.stagger(20),
   loop: false,
   autoplay: false,
@@ -52,6 +52,6 @@ const scrollingAnimation = anime.timeline({
 
 landingAnimation.play();
 
-$(window).on('scrollup', function() {
+$(window).on('scroll', function() {
   scrollingAnimation.play();
 })
