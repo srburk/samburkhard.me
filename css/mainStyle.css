@@ -12,7 +12,7 @@
 }
 @font-face {
   font-family: "NunitoSans_BoldItalic";
-  src: url("../fonts/NunitoSans-BoldItalicttf") format("truetype");
+  src: url("../fonts/NunitoSans-BoldItalic.ttf") format("truetype");
 }
 @font-face {
   font-family: "NunitoSans_ExtraBold";
@@ -88,6 +88,10 @@ html {
   background-color: white;
 }
 
+svg {
+  width: 20em;
+}
+
 .nav-link {
   color: black;
 }
@@ -102,7 +106,7 @@ html {
   width: 60%;
 }
 
-.wrapper {
+.my-wrapper {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
@@ -133,10 +137,26 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
-  transform: translateZ(-1px) scale(2);
+  transform: translateZ(-0.001px) scale(2);
   background-size: 100%;
   z-index: -1;
-  background-image: url("../assets/img.jpeg");
+  background-color: white;
+}
+
+.sticks-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 75%;
+}
+
+.sticks-animation div {
+  /*position: absolute;*/
+  width: 64px;
+  height: 128px;
+  border: 2px solid #000000;
+  background-color: #FFFFFF;
 }
 
 /*# sourceMappingURL=mainStyle.css.map */
