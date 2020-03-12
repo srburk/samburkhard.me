@@ -1,3 +1,13 @@
+/* Keep images sized correctly */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 100;
+}
+
 @font-face {
   font-family: "NunitoSans_Black";
   src: url("../fonts/NunitoSans-Black.ttf") format("truetype");
@@ -54,114 +64,59 @@
   font-family: "NunitoSans_SemiBoldItalic";
   src: url("../fonts/NunitoSans-SemiBoldItalic.ttf") format("truetype");
 }
-/* Tablet Landscape */
-@media screen and (max-width: 1060px) {
-  #primary {
-    width: 67%;
+a {
+  color: #424242;
+  text-decoration: none;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+article, aside, .column {
+  flex: 1;
+}
+
+@media (max-width: 599px) {
+  article {
+    flex: 7.5;
   }
 
-  #secondary {
-    width: 30%;
-    margin-left: 3%;
+  aside {
+    flex: 2.5;
   }
 }
-/* Tabled Portrait */
-@media screen and (max-width: 768px) {
-  #primary {
-    width: 100%;
-  }
-
-  #secondary {
-    width: 100%;
-    margin: 0;
-    border: none;
-  }
-}
-/* Keep images sized correctly */
-img {
-  max-width: 100%;
-  height: auto;
+.header {
+  position: sticky;
+  top: 0;
 }
 
-html {
-  font-size: 100%;
-  background-color: white;
-}
-
-svg {
-  width: 20em;
-}
-
-.nav-link {
-  color: black;
-}
-
-.nav-item {
-  font-family: NunitoSans_Regular;
-}
-
-.navbar-brand {
+.brand {
+  font-size: 1.5em;
   font-family: NunitoSans_Bold;
-  color: black;
+}
+@media (max-width: 599px) {
+  .brand {
+    font-size: 0.75em;
+  }
 }
 
-.hero-greeting {
-  height: auto;
-  width: 60%;
+.menu {
+  text-align: right;
 }
 
-#app {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 1px;
-}
-
-.section {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.parallax {
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateZ(-1px) scale(2);
-  background-size: 100%;
-  z-index: -1;
-  background-color: white;
-}
-
-.forefront-parallax {
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateZ(1px) scale(2);
-  background-size: 100%;
-  z-index: -1;
-  background-color: white;
-}
-
-.landing-animation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  height: 95%;
-}
-.landing-animation .landing-animation-el {
-  width: 5%;
-  height: 15%;
-  border: 1px solid #000000;
-  background-color: white;
+.menu-item {
+  font-family: NunitoSans_Bold;
+  list-style-type: none;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=mainStyle.css.map */

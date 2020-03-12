@@ -1,0 +1,24 @@
+// _header.scss
+
+.header {
+    position: sticky;
+    top: 0;
+}
+
+.brand {
+  font-size: 1.5em;
+  font-family: NunitoSans_Bold;
+  @include for-phone-only {
+    font-size: 0.75em;
+  }
+}
+
+.menu {
+  text-align: right;
+}
+
+.menu-item {
+  font-family: NunitoSans_Bold;
+  list-style-type: none;
+  display: inline-block;
+}

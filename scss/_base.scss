@@ -1,0 +1,8 @@
+/* Keep images sized correctly */
+img { max-width: 100%; height: auto; }
+
+html { font-size:100; }
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}

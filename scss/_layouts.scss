@@ -1,0 +1,27 @@
+// header
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// behaves like a container
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+article, aside, .column {
+  flex: 1;
+}
+
+@include for-phone-only {
+  article {
+    flex: 7.5;
+  }
+  aside {
+    flex: 2.5;
+  }
+}
