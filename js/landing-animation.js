@@ -30,28 +30,15 @@ const landingAnimation = anime.timeline({
   translateX: anime.stagger([-5, 100]),
   rotate: anime.stagger([-45, 194]),
   scale: anime.stagger([1, 2], {from: 'center'}),
-  delay: anime.stagger(10, {from: 0}),
-})
-
-const scrollingAnimation = anime.timeline({
-  targets: '.landing-animation .landing-animation-el',
-  easing: 'easeInSine',
-  delay: anime.stagger(20),
-  loop: false,
-  autoplay: false,
-  duration: 1500,
-})
+  delay: anime.stagger(5, {from: 0}),
+}, 0)
 
 .add({
   translateX: () => anime.random(-90, 100),
   translateY: () => anime.random(-150, 150),
-  scale: anime.stagger([1.5, .5], {from: 'center'}),
+  scale: anime.stagger([1.25, .5], {from: 'center'}),
   rotate: anime.stagger([7, -7], {from: 'last'}),
   delay: anime.stagger(60, {from: 'center', grid: [8, 8]}),
-})
+}, 2000)
 
 landingAnimation.play();
-
-$(window).on('scroll', function() {
-  scrollingAnimation.play();
-})
