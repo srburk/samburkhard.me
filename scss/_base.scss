@@ -3,6 +3,10 @@ img { max-width: 100%; height: auto; }
 
 html { font-size:100; }
 
+.vector {
+  width: 200px;
+}
+
 @mixin for-phone-only {
   @media (max-width: 599px) { @content; }
 }

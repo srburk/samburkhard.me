@@ -8,6 +8,10 @@ html {
   font-size: 100;
 }
 
+.vector {
+  width: 200px;
+}
+
 @font-face {
   font-family: "NunitoSans_Black";
   src: url("../fonts/NunitoSans-Black.ttf") format("truetype");
@@ -70,7 +74,6 @@ a {
 }
 
 main {
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -117,6 +120,16 @@ article, aside, .column {
   font-family: NunitoSans_Bold;
   list-style-type: none;
   display: inline-block;
+}
+
+.hero-content {
+  height: 100%;
+  width: auto;
+}
+
+.color-splash-bkgd {
+  background-image: url("../assets/color-splash-bckd.svg");
+  background-size: cover;
 }
 
 /*# sourceMappingURL=mainStyle.css.map */
