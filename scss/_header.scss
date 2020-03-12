@@ -2,14 +2,18 @@
 
 .header {
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
+    justify-content: space-between;
 }
 
 .brand {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-family: NunitoSans_Bold;
-  @include for-phone-only {
-    font-size: 0.75em;
+  display: inline-block;
+  padding: 30px;
+  @include small-screens {
+    font-size: .80em;
   }
 }
 
@@ -17,8 +21,15 @@
   text-align: right;
 }
 
+// TODO: menu items should dissapear on small screens
 .menu-item {
-  font-family: NunitoSans_Bold;
+  font-family: NunitoSans_SemiBold;
+  text-align: center;
   list-style-type: none;
   display: inline-block;
+  font-size: 1em;
+  margin: 15px;
+  @include small-screens {
+    font-size: .50em;
+  }
 }
