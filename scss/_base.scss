@@ -9,5 +9,5 @@ html { font-size:100%; }
 
 
 @mixin small-screens {
-  @media (max-width: 599px) { @content; }
+  @media (max-width: 700px) { @content; }
 }

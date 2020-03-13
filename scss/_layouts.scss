@@ -4,29 +4,43 @@ main {
   margin: 0 auto;
 }
 
-// section aligns columns of items
+// section aligns multiple columns
 section {
   display: flex;
   flex-flow: row wrap;
 }
 
-// container aligns rows of items
+// container aligns multiple rows
 .container {
   display: flex;
   flex-flow: column wrap;
   flex-direction: column;
-  height: 101vh;
-  width: 101wh;
+}
+
+.full-width-container {
+  height: 103vh;
+  width: 103wh;
 }
 
 .color-splash-bckd {
-  background-image: url('../assets/color-splash-bckd.svg');
+  background-image: url('../assets/desktop-splash.svg');
   background-size: cover;
+  @include small-screens {
+    background-image: url('../assets/small-screen-splash.svg');
+  }
 }
 
-// columns go in rows
-.column {
-  flex: 1;
+// fill full width of columns and rows
+.chunk {
+  flex: 1; // full length
+}
+
+.chunk_2 {
+  flex: 2; // most length
+}
+
+.chunk_3 {
+  flex: 3;
 }
 
 @include small-screens {

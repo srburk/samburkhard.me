@@ -1,9 +1,38 @@
 // _hero.scss
 
-.hero-content {
-  justify-content: center;
+.hero {
+  align-items: center;
+}
+
+@include small-screens {
+  .menu-icon {
+    display: none;
+    padding: 20px;
+  }
 }
 
 .hero-svg {
+  width: 20rem;
+  height: auto;
+  margin-bottom: 75px;
+  @include small-screens {
+    width: 8.5em;
+    margin-bottom: 1em;
+  }
+}
 
+.orange-slice {
+  width: 10%;
+  height: auto;
+}
+
+.scroll-arrow {
+  width: 5%;
+  height: auto;
+  // padding-top: 50px;
+  margin-top: 2rem;
+}
+
+.hero-content {
+  align-items: center;
 }
