@@ -97,7 +97,7 @@ section {
   background-image: url("../assets/desktop-splash.svg");
   background-size: cover;
 }
-@media (max-width: 700px) {
+@media screen and (orientation: portrait) {
   .color-splash-bckd {
     background-image: url("../assets/small-screen-splash.svg");
   }
@@ -115,7 +115,7 @@ section {
   flex: 3;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   article {
     flex: 1;
   }
@@ -137,7 +137,7 @@ section {
   display: inline-block;
   margin: 2rem;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .brand {
     font-size: 0.8em;
   }
@@ -154,21 +154,30 @@ section {
   list-style-type: none;
   display: inline-block;
   font-size: 1em;
-  margin: 0.5rem;
+  margin: 0.5rem 1rem;
   align-items: bottom;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .menu-item {
-    font-size: 0.75em;
-    margin: 0.25rem;
+    font-size: 0.5em;
+    margin: 0.5rem 0.25rem;
   }
+}
+
+.menu a li:hover {
+  font-family: NunitoSans_Bold;
+}
+
+.menu a li:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .hero {
   align-items: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .menu-icon {
     display: none;
     padding: 20px;
@@ -179,9 +188,9 @@ section {
   height: auto;
   margin-bottom: 75px;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .hero-svg {
-    width: 8.5em;
+    width: 12em;
     margin-bottom: 1em;
   }
 }
@@ -192,9 +201,15 @@ section {
 }
 
 .scroll-arrow {
-  width: 5%;
+  width: 4rem;
   height: auto;
   margin-top: 2rem;
+}
+@media (max-width: 900px) {
+  .scroll-arrow {
+    width: 2.5rem;
+    margin-bottom: 1em;
+  }
 }
 
 .hero-content {

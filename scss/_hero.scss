@@ -16,7 +16,7 @@
   height: auto;
   margin-bottom: 75px;
   @include small-screens {
-    width: 8.5em;
+    width: 12em;
     margin-bottom: 1em;
   }
 }
@@ -27,10 +27,14 @@
 }
 
 .scroll-arrow {
-  width: 5%;
+  width: 4rem;
   height: auto;
   // padding-top: 50px;
   margin-top: 2rem;
+  @include small-screens {
+    width: 2.5rem;
+    margin-bottom: 1em;
+  }
 }
 
 .hero-content {

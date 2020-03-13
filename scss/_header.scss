@@ -29,10 +29,19 @@
   list-style-type: none;
   display: inline-block;
   font-size: 1em;
-  margin: 0.5rem;
+  margin: 0.5rem 1rem;
   align-items: bottom;
   @include small-screens {
-    font-size: .75em;
-    margin: .25rem;
+    font-size: .5em;
+    margin: 0.5rem 0.25rem;
   }
+}
+
+.menu a li:hover {
+  font-family: NunitoSans_Bold;
+}
+
+.menu a li:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }

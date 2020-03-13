@@ -9,5 +9,9 @@ html { font-size:100%; }
 
 
 @mixin small-screens {
-  @media (max-width: 700px) { @content; }
+  @media (max-width: 900px) { @content; }
+}
+
+@mixin for-portrait-orient {
+  @media screen and (orientation: portrait) { @content; }
 }
