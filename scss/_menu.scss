@@ -1,0 +1,69 @@
+// menu.scss
+
+a {
+  cursor: url('../assets/crosshair.svg') 16 16, auto;
+}
+
+// #canvas {
+//   z-index: 3;
+//   opacity: 0%;
+//   top: 0;
+//   left: 0;
+//   position: absolute;
+//   height: 100%;
+//   width: 100%;
+// }
+//
+// #cursor {
+//   position: absolute;
+//   z-index: 100;
+//   background-color: #424242;
+//   border-radius: 50%;
+//   top: 0;
+//   left: 0;
+//   height: 100px;
+//   width: 100px;
+// }
+
+.menu-chunk {
+  align-items: center;
+  padding: 1rem;
+}
+
+.menu-item {
+  font-family: Poppins_Medium;
+  font-size: 10em;
+  color: #424242;
+}
+
+a:hover .menu-item {
+  color: #F5736B;
+}
+
+a:hover {
+  background-color: #000000;
+}
+
+.link-arrow {
+  height: 6em;
+  width: auto;
+  fill: #424242;
+}
+
+.menu-label {
+  font-family: Poppins_Medium;
+  font-size: 5em;
+  color: #424242;
+}
+
+.tan-pane {
+  background-color: #F1CBB2;
+}
+
+.blue-pane {
+  background-color: #CBE4DD;
+}
+
+.green-pane {
+  background-color: #87AE9B;
+}

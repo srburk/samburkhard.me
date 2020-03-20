@@ -1,85 +1,109 @@
 // _fonts.scss
 
-// Nunito Sans Black
+// Poppins Black
 @font-face {
-  font-family: 'NunitoSans_Black';
-  src: url('../fonts/NunitoSans-Black.ttf') format('truetype');
+  font-family: 'Poppins_Black';
+  src: url('../fonts/Poppins-Black.ttf') format('truetype');
 }
 
-// Nunito Sans BlackItalic
+// Poppins BlackItalic
 @font-face {
-  font-family: 'NunitoSans_BlackItalic';
-  src: url('../fonts/NunitoSans-BlackItalic.ttf') format('truetype');
+  font-family: 'Poppins_BlackItalic';
+  src: url('../fonts/Poppins-BlackItalic.ttf') format('truetype');
 }
 
-// Nunito Sans Bold
+// Poppins Bold
 @font-face {
-  font-family: 'NunitoSans_Bold';
-  src: url('../fonts/NunitoSans-Bold.ttf') format('truetype');
+  font-family: 'Poppins_Bold';
+  src: url('../fonts/Poppins-Bold.ttf') format('truetype');
 }
 
-// Nunito Sans BoldItalic
+// Poppins BoldItalic
 @font-face {
-  font-family: 'NunitoSans_BoldItalic';
-  src: url('../fonts/NunitoSans-BoldItalic.ttf') format('truetype');
+  font-family: 'Poppins_BoldItalic';
+  src: url('../fonts/Poppins-BoldItalic.ttf') format('truetype');
 }
 
-// Nunito Sans ExtraBold
+// Poppins ExtraBold
 @font-face {
-  font-family: 'NunitoSans_ExtraBold';
-  src: url('../fonts/NunitoSans-ExtraBold.ttf') format('truetype');
+  font-family: 'Poppins_ExtraBold';
+  src: url('../fonts/Poppins-ExtraBold.ttf') format('truetype');
 }
 
-// Nunito Sans ExtraBoldItalic
+// Poppins ExtraBoldItalic
 @font-face {
-  font-family: 'NunitoSans_ExtraBoldItalic';
-  src: url('../fonts/NunitoSans-ExtraBoldItalic.ttf') format('truetype');
+  font-family: 'Poppins_ExtraBoldItalic';
+  src: url('../fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
 }
 
-// Nunito Sans ExtraLight
+// Poppins ExtraLight
 @font-face {
-  font-family: 'NunitoSans_ExtraLight';
-  src: url('../fonts/NunitoSans-ExtraLight.ttf') format('truetype');
+  font-family: 'Poppins_ExtraLight';
+  src: url('../fonts/Poppins-ExtraLight.ttf') format('truetype');
 }
 
-// Nunito Sans ExtraLightItalic
+// Poppins ExtraLightItalic
 @font-face {
-  font-family: 'NunitoSans_ExtraLightItalic';
-  src: url('../fonts/NunitoSans-ExtraLightItalic.ttf') format('truetype');
+  font-family: 'Poppins_ExtraLightItalic';
+  src: url('../fonts/Poppins-ExtraLightItalic.ttf') format('truetype');
 }
 
-// Nunito Sans Italic
+// Poppins Italic
 @font-face {
-  font-family: 'NunitoSans_Italic';
-  src: url('../fonts/NunitoSans-Italic.ttf') format('truetype');
+  font-family: 'Poppins_Italic';
+  src: url('../fonts/Poppins-Italic.ttf') format('truetype');
 }
 
-// Nunito Sans Light
+// Poppins Light
 @font-face {
-  font-family: 'NunitoSans_Light';
-  src: url('../fonts/NunitoSans-Light.ttf') format('truetype');
+  font-family: 'Poppins_Light';
+  src: url('../fonts/Poppins-Light.ttf') format('truetype');
 }
 
-// Nunito Sans LightItalic
+// Poppins LightItalic
 @font-face {
-  font-family: 'NunitoSans_LightItalic';
-  src: url('../fonts/NunitoSans-LightItalic.ttf') format('truetype');
+  font-family: 'Poppins_LightItalic';
+  src: url('../fonts/Poppins-LightItalic.ttf') format('truetype');
 }
 
-// Nunito Sans Regular
+// Poppins Medium
 @font-face {
-  font-family: 'NunitoSans_Regular';
-  src: url('../fonts/NunitoSans-Regular.ttf') format('truetype');
+  font-family: 'Poppins_Medium';
+  src: url('../fonts/Poppins-Medium.ttf') format('truetype');
 }
 
-// Nunito Sans SemiBold
+// Poppins MediumItalic
 @font-face {
-  font-family: 'NunitoSans_SemiBold';
-  src: url('../fonts/NunitoSans-SemiBold.ttf') format('truetype');
+  font-family: 'Poppins_MediumItalic';
+  src: url('../fonts/Poppins-MediumItalic.ttf') format('truetype');
 }
 
-// Nunito Sans SemiBoldItalic
+// Poppins Regular
 @font-face {
-  font-family: 'NunitoSans_SemiBoldItalic';
-  src: url('../fonts/NunitoSans-SemiBoldItalic.ttf') format('truetype');
+  font-family: 'Poppins_Regular';
+  src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+// Poppins SemiBold
+@font-face {
+  font-family: 'Poppins_SemiBold';
+  src: url('../fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+
+// Poppins SemiBoldItalic
+@font-face {
+  font-family: 'Poppins_SemiBoldItalic';
+  src: url('../fonts/Poppins-SemiBoldItalic.ttf') format('truetype');
+}
+
+// Poppins Thin
+@font-face {
+  font-family: 'Poppins_Thin';
+  src: url('../fonts/Poppins-Thin.ttf') format('truetype');
+}
+
+// Poppins ThinItalic
+@font-face {
+  font-family: 'Poppins_ThinItalic';
+  src: url('../fonts/Poppins-ThinItalic.ttf') format('truetype');
 }
