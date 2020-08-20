@@ -116,7 +116,7 @@ a:hover .menu-item {
 }
 
 a:hover {
-  background-color: #000000;
+  opacity: 0.5;
 }
 
 .link-arrow {
