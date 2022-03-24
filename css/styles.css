@@ -41,34 +41,85 @@ nav * {
 }
 
 h1 {
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 1.5em;
+	color: #54634B;
 }
 
-/* Media Queries */
+h2 {
+	font-size: 1.5em;
+	color: #292929;
+}
+
+footer {
+	background: black;
+	justify-content: center;
+	bottom: 0;
+}
 
 /* Other Classes */
 .button {
 	color: white;
-	background: black;
+	background: #292929;
 	text-decoration: none;
-	padding: 0.4em;
-	font-weight: 500;
+	border: none;
+	padding: 1em 2em 1em 2em;
+	border-radius: 0.75em;
+	font-weight: 600;
+}
+
+.hero {
+	justify-content: center;
+	margin-top: 3em;
+}
+/* Small Screens */
+@media screen and (max-width: 800px) {
+  .hero {
+	margin-top: 0.5em;
+  }
+}
+
+.hero-img {
+	max-width: 35%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/* Small Screens */
+@media screen and (max-width: 800px) {
+  .hero-img {
+	max-width: 55%;
+  }
+}
+
+.hero-info {
+	max-width: 50%;
+	margin: 3em 0 0 3em;
+}
+/* Small Screens */
+@media screen and (max-width: 800px) {
+  .hero-info {
+	max-width: 90%;
+	margin: 0 0 0 0;
+  }
+}
+
+.hero-more-info {
+	margin-top: 3em;
+}
+
+.hero-more-info * {
+	margin-right: 1em;
 }
 
 .link {
 	text-decoration: none;
-	color: black;
+	color: #54634B;
 	font-weight: 500;
 }
 
-.info-heading {
-	font-weight: 500;
-	text-align: left;
-}
-
-.info-box {
-	font-weight: 400;
+.project-description {
+	margin-top: 2em;
 }
 
 /* Hover Behavior */
