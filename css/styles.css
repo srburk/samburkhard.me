@@ -16,13 +16,17 @@
 body {
 	margin: 0;
 	padding: 0;
+	left: 0;
+	top: 0;
 	font-family: 'Inter', sans-serif;
 }
 
 header {
 	justify-content: space-between;
 	align-items: center;
-	padding: 2em 0 0 0;
+	padding: 1em 0 1em 0;
+	position: fixed;
+	background: white;
 }
 
 header * {
@@ -32,7 +36,7 @@ header * {
 main {
 	align-items: left;
 	justify-content: center;
-	margin: 1em 2em 0 2em;
+	/* margin: 1em 2em 0 2em; */
 	text-align: left;
 }
 
@@ -47,7 +51,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 2em;
 	color: #292929;
 }
 
@@ -63,19 +67,21 @@ footer {
 	background: #292929;
 	text-decoration: none;
 	border: none;
-	padding: 1em 2em 1em 2em;
+	padding: 0.75em 2em 0.75em 2em;
 	border-radius: 0.75em;
 	font-weight: 600;
 }
 
 .hero {
 	justify-content: center;
-	margin-top: 3em;
+	margin-top: 5em;
+	/* margin-top: 3em; */
+	/* margin: 2em 2em 0 2em; */
 }
 /* Small Screens */
 @media screen and (max-width: 800px) {
   .hero {
-	margin-top: 0.5em;
+	margin-top: 3em;
   }
 }
 
@@ -94,7 +100,7 @@ footer {
 
 .hero-info {
 	max-width: 50%;
-	margin: 3em 0 0 3em;
+	/* margin: 5em 0 0 5em; */
 }
 /* Small Screens */
 @media screen and (max-width: 800px) {
@@ -120,6 +126,10 @@ footer {
 
 .project-description {
 	margin-top: 2em;
+}
+
+.about {
+	background: #f4f4f4;
 }
 
 /* Hover Behavior */
