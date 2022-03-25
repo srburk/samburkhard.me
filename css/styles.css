@@ -55,12 +55,46 @@ h2 {
 	color: #292929;
 }
 
-footer {
-	background: black;
-	justify-content: center;
-	bottom: 0;
+@media screen and (max-width: 320px) {
+	h1 {
+		font-size: 1.1em;
+	}
 }
 
+/* Hamburger */
+.header-links {
+	display: block;
+}
+
+#hamburger {
+	display: none;
+	z-index: 2;
+}
+
+#hamburger img {
+	width: 2em;
+	height: auto;
+}
+
+#hamburger-links {
+	display: none;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	background: #54634B;
+	position: fixed;
+}
+
+/* Small Screens */
+@media screen and (max-width: 700px) {
+  .header-links {
+	display: none;
+  }
+  #hamburger {
+	  display: block;
+  }
+  
+}
 /* Other Classes */
 .button {
 	color: white;
@@ -80,7 +114,7 @@ footer {
 }
 
 .info p {
-	width: 20em;
+	max-width: 20em;
 	font-weight: 400;
 }
 
@@ -90,13 +124,18 @@ footer {
 }
 
 .projects {
-	margin-top: 2em;
+	margin-top: 3em;
 }
 
-.project-gray {
-	background: #292929;
+.projects .project {
 	justify-content: center;
 	padding: 3em 0 3em 0;
+	max-height: 70%;
+}
+
+/* Project Gray */
+.project-gray {
+	background: #292929;
 }
 
 .project-gray h2 {
@@ -110,6 +149,7 @@ footer {
 
 .project-gray .project-description {
 	color: white;
+	font-weight: 300;
 }
 
 .project-img {
@@ -143,7 +183,6 @@ footer {
 .project-description {
 	margin-bottom: 2em;
 }
-
 
 /* Hover Behavior */
 
